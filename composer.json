@@ -1,0 +1,21 @@
+{
+    "name" : "anax/project",
+    "description": "Project site for ramverk1",
+    "license": "MIT",
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Anax\\": "src/",
+            "Nihl\\": "src/"
+        }
+    },
+    "require": {
+        "anax/anax-ramverk1-me": "^1.0.0",
+        "anax/htmlform": "^2.0",
+        "anax/database-active-record": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}

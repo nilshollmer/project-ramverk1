@@ -1,0 +1,9 @@
+/.bin
+/build
+/cache
+/vendor
+memory::
+composer.lock
+.phpunit.result.cache
+config/apikeys.php
+config/database.php

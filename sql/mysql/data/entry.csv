@@ -1,0 +1,6 @@
+id,user,question,text,score,created
+1,user3,1,entry1,10,2021-03-01 01:00:00
+2,user1,2,entry2,1,2021-03-01 02:00:00
+3,user2,1,entry3,0,2021-03-01 03:00:00
+4,user1,4,entry4,-1,2021-03-01 04:00:00
+5,user3,1,entry5,-10,2021-03-01 05:00:00
