@@ -1,0 +1,120 @@
+/** --------------------------------------------------------------
+ * Forum
+ */
+
+
+.questions-header {
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+        margin-top: @magicNumber;
+        margin-bottom: @magicNumber;
+    }
+
+}
+.question,
+.answer {
+    border-bottom: 1px solid #ccc;
+    .question-main,
+    .answer-main {
+        display: flex;
+
+
+        .question-body,
+        .answer-body {
+            width: 100%;
+            padding: @magicNumber / 2;
+        }
+    }
+}
+
+.question-user,
+.answer-user {
+    float: right;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    padding: @magicNumber /4;
+    width: fit-content;
+
+    .user-profile {
+        display: flex;
+
+        .user-details {
+            margin-left: @magicNumber;
+            flex-direction: column;
+            display: flex;
+        }
+    }
+}
+.question-summary {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .question-summary-values {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        #desinax-vgrid.column(6);
+
+        div {
+            padding: @magicNumber / 4;
+        }
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        #desinax-vgrid.column(@columns - 6);
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .started {
+            text-align: right;
+        }
+    }
+}
+
+.question-tags {
+    display: flex;
+    justify-content: flex-start;
+}
+.comments-list {
+
+
+    .comment {
+        font-size: 0.8em;
+        text-align: right;
+        border-bottom: 1px solid #ccc;
+
+    }
+}
+.comment-box {
+
+
+    .comment-form {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.8em;
+
+        label {
+            display: none;
+        }
+
+    }
+}
+
+.votes {
+    margin: 0;
+    text-align: center;
+    font-size: @magicNumber;
+}

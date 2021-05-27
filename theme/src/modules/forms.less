@@ -21,11 +21,18 @@ input[readonly] {
   color: #666;
 }
 
-/*
+
 label {
-  font-size: smaller;
+    font-weight: bolder;
 }
-*/
+
+
+.cf-desc {
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
 .validation-failed {
   border: 2px solid red;
 }
@@ -52,7 +59,7 @@ textarea.nowrap {
   input[type=text] {
     width:30em;
   }
-  
+
   textarea {
     width: 40em;
     height: 15em;
@@ -66,3 +73,24 @@ fieldset {
 .span10 { width: 10px * (@columnWidth + @gutterWidth); }
 .span12 { width: 12px * (@columnWidth + @gutterWidth); }
 .span14 { width: 14px * (@columnWidth + @gutterWidth); }
+
+// .question-form {
+//     input:not(#form-element-submit) {
+//         width: 100%
+//     }
+//     p {
+//         margin-bottom: 0;
+//     }
+// }
+
+.comment-form,
+.entry-form,
+.question-form {
+    p:not(.buttonbar):not(.cf-desc  ) {
+        width: 100%;
+        margin-bottom: 0;
+        input {
+            width: 100%;
+        }
+    }
+}

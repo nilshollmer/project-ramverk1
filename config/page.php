@@ -12,13 +12,13 @@ return [
         "region" => "layout",
         "template" => "anax/v2/layout/dbwebb_se",
         "data" => [
-            "baseTitle" => " | ramverk1",
+            "baseTitle" => " | OverFlower",
             "bodyClass" => null,
             "favicon" => "favicon.ico",
             "htmlClass" => null,
             "lang" => "sv",
             "stylesheets" => [
-                "css/dbwebb-se.min.css",
+                "css/style_project.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
@@ -33,7 +33,7 @@ return [
             "template" => "anax/v2/header/site_logo_text",
             "data" => [
                 "homeLink"      => "",
-                "siteLogoText"  => "MuminOverflow",
+                "siteLogoText"  => "OverFlower",
             ],
         ],
         [
@@ -70,11 +70,11 @@ return [
                     ],
                     [
                         "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-2",
+                        "contentRoute" => "block/footer-col-4",
                     ],
                     [
                         "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-3",
+                        "contentRoute" => "block/footer-col-5",
                     ]
                 ]
             ],

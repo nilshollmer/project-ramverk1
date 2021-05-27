@@ -6,6 +6,8 @@
  * constructions of the website to show how they could be styled.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /**
  * Normalize and reset the style.
  */
@@ -92,6 +94,7 @@ figure.figure {
     #desinax-figure.figure(1100px);
 }
 
+
 figure.asciinema {
     &:extend(figure.figure);
     #desinax-figure.asciinema();
@@ -165,12 +168,17 @@ img.responsive {
  * Use internal modules
  * @TODO check and clean up and explain what this style does.
  */
-@import "modules/blog.less";
+@import "modules/variables.less";
+@import "modules/colors.less";
+@import "modules/blog_project.less";
 @import "modules/forms.less";
+@import "modules/forum.less";
 @import "modules/linkedin.less";
-//@import "modules/variables.less"; // OBSOLETE
-
-
+@import "modules/index.less";
+@import "modules/about.less";
+@import "modules/tags.less";
+@import "modules/users.less";
+@import "modules/buttons.less";
 
 /**
  * Base style to affect HTML elements on a general scale.
@@ -184,26 +192,21 @@ img.responsive {
  * and other regions of the page including route specific styles.
  */
 @import "layout/layout_project.less";
-@import "layout/dbwebb-se_v2.less"; // Rearrange and move classic style to layout.less
+@import "layout/dbwebb-se_project.less"; // Rearrange and move classic style to layout.less
 @import "layout/regions.less";
 
 
 
-.site-logo {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
 .site-logo-text {
-    font-family: @fontFamilySiteLogo;
+    font-family: @fontTheme, @fontFamilySiteLogo;
     padding-left: 0.2em;
+    font-size: 1.5em;
 }
 
 .rm-navbar {
     text-align: center;
-    font-family: @fontFamilyCambria;
-    font-size: 1.5em;
+    font-family: @fontFamilyHelvetica;
+    font-size: 1.2em;
     line-height: 0;
 }
 
@@ -220,23 +223,36 @@ img.responsive {
     background-image: linear-gradient(to right, #fff, #ccc);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    border-bottom: none;
+    margin-bottom: @magicNumber;
+}
 
 
 /**
  * My settings.
  */
-@bgColorHtml: #424242;
+// @bgColorHtml: #424242;
+@bgColorHtml: #eff0f1;
 @bgColorBody: #fff;
 @colorBody:   #111;
+@bgColorFooter: #242729;
 
-@fontFamilyHeadings: @fontFamilyCambria;
-@fontFamilyBody:     @fontFamilyVerdana;
-@fontFamilyCode:     @fontFamilyCourier;
+@fontFamilyHeadings:    @fontFamilyHelvetica;
+@fontFamilyBody:        @fontFamilyHelvetica;
+@fontFamilyCode:        @fontFamilyHelvetica;
+// @fontFamilyHeadings: @fontFamilyCambria;
+// @fontFamilyBody:     @fontFamilyVerdana;
+// @fontFamilyCode:     @fontFamilyCourier;
+@fontTheme:          'Lobster';
 
-@colorH1BorderBottom: #666; // Add to h4 also
-@colorH2BorderBottom: #ccc;
-@colorH3BorderBottom: #eee;
-@colorH4BorderBottom: #eee;
+@btnBlue:   #0095ff;
+@btnGreen:  #5eba7d;
 
 @magicNumber:  24px;
 @fontSizeBody: 16px;

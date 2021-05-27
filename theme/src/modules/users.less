@@ -1,0 +1,41 @@
+/** --------------------------------------------------------------
+ * Tags
+ */
+
+.user-list {
+    .user-info {
+        #desinax-vgrid.column(@columns / 3);
+        border-radius: 4px;
+        border: 1px solid black;
+        padding: @magicNumber / 2;
+        margin-bottom: @magicNumber / 2;
+    }
+}
+
+.user-main {
+    display: flex;
+
+    .user-profile-picture {
+        #desinax-vgrid.column(@columns / 4);
+        background-color: @bgColorLight;
+        border: 1px solid @colorBorderLight;
+        border-radius: 4px;
+        padding: 0.5em 0.25em;
+        .user-reputation {
+            text-align: center;
+            margin-top: 0;
+
+        }
+    }
+
+    .user-profile-info {
+        #desinax-vgrid.column(@columns - (@columns / 4));
+
+        .user-name {
+            margin-bottom: 0;
+        }
+        .user-occupation {
+            margin-top: 0;
+        }
+    }
+}

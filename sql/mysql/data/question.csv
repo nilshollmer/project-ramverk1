@@ -1,5 +1,8 @@
-id,user,title,views,created
-1,user1,question1,0,2021-02-01 01:00:00
-2,user2,question2,0,2021-02-02 02:00:00
-3,user3,question3,0,2021-02-03 03:00:00
-4,user3,question4,0,2021-02-04 04:00:00
+id,user,title,text,views,score,entries,created
+1,user1,"Vad är viktigt när man flyttar rabarber?","Vi ska bygga om och kommer behöva flytta en rabarberbuske, vad är viktigt att tänka på när man flyttar rabarber?",0,0,0,2021-02-01 01:00:00
+2,user2,"Vad gör man åt larver och nät på äppelträd?","Vi får som larver som spinner nät på våra äppelträd, det ser ut som att samma larver finns på slånbärssnår. Blir som vita nät som innehåller massor med larver. Bladen skrynklar ihop sig ungefär när den börjar blomma, därefter kommer näten som fylls med larver. Vad kan man göra?",0,0,0,2021-02-02 02:00:00
+3,user3,"Förökning av vildvin","Hur förökar man klätterväxter som vildvin?",0,0,0,2021-02-03 03:00:00
+4,user3,"Kan man sänka pH-värdet i jorden?","Kan man sänka pH-värdet i jorden utan att byta ut jorden?",0,0,0,2021-02-04 04:00:00,
+5,sabrina,"Orkidéer","Kan man plantera orkidéer i gamla PET-flaskor? Så att inte plasten i sig är skadlig på något vis. Har haft lite problem att hitta plastkrukor i passande storlek ibland.",0,0,0,2021-01-04 04:04:00
+6,Charlie,"Vad gör man åt larver och nät på äppelträd?","Vi får som larver som spinner nät på våra äppelträd, det ser ut som att samma larver finns på slånbärssnår. Blir som vita nät som innehåller massor med larver. Bladen skrynklar ihop sig ungefär när den börjar blomma, därefter kommer näten som fylls med larver. Vad kan man göra?",0,0,0,2021-01-21 12:23:33
+7,admin,"Välkomna till Forumet","Välkomna alla användare till OverFlower, världens bästa blomster-och odlingsforum!",0,0,0,2020-12-24 12:00:00

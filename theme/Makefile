@@ -101,7 +101,7 @@ DESINAX_MODULES = $(shell cd $(SOURCE) && find @desinax -mindepth 1 -maxdepth 1 
 #
 # target: prepare                 - Prepare the build directory.
 .PHONY: prepare
-prepare: 
+prepare:
 	@$(call HELPTEXT,$@)
 	@[ -d $(BUILD)/less/css ] || install -d $(BUILD)/less/css
 	@[ -d $(BUILD)/less/lint ] || install -d $(BUILD)/less/lint
@@ -116,7 +116,7 @@ build: prepare less
 
 # target: clean                   - Clean from generated build files.
 .PHONY: clean
-clean: 
+clean:
 	@$(call HELPTEXT,$@)
 	rm -rf $(BUILD)
 
@@ -309,7 +309,7 @@ lint-css: less
 #
 # target: npm-install             - Install npm from package.json.
 .PHONY: npm-install
-npm-install: 
+npm-install:
 	@$(call HELPTEXT,$@)
 	npm install
 
@@ -317,7 +317,7 @@ npm-install:
 
 # target: npm-update              - Update npm using package.json.
 .PHONY: npm-update
-npm-update: 
+npm-update:
 	@$(call HELPTEXT,$@)
 	npm update
 
@@ -325,7 +325,7 @@ npm-update:
 
 # target: npm-upgrade             - Upgrade npm using package.json.
 .PHONY: npm-upgrade
-npm-upgrade: 
+npm-upgrade:
 	@$(call HELPTEXT,$@)
 	npm upgrade
 
@@ -333,6 +333,6 @@ npm-upgrade:
 
 # target: npm-outdated            - Check for outdated packages.
 .PHONY: npm-outdated
-npm-outdated: 
+npm-outdated:
 	@$(call HELPTEXT,$@)
 	npm outdated --depth=0

@@ -1,4 +1,7 @@
-id,username,password,avatar,created
-1,user1,pass,imagelink,2021-01-01 01:00:00
-2,user2,pass,imagelink,2021-01-02 02:00:00
-3,user3,pass,imagelink,2021-01-03 03:00:00
+id,username,email,password,reputation,location,occupation,created
+1,user1,n.hollmer@gmail.com,$2y$10$HMkAIUtYtTUHot4HW5nmvOUgAkvcGdfmmYOR8OSGR21VwvgIxww2u,1,"Dubai","Bilmekaniker",2021-01-01 01:00:00
+2,user2,n.hollmer@gmail.com,$2y$10$BCR8cBfM.cnp7P1Joiw2oOX0sT.anQpLG.sshbfU55fRjcZLQ0Iza,2,"Karlsskoga","Skateboardproffs",2021-01-02 02:00:00
+3,user3,n.hollmer@gmail.com,$2y$10$0z0z6VRR93zxuHxmyqyyeuAQz.fxMENAHWSvcx.Vba0A3kgfnXacy,3,"Los Angeles","Software Architect",2021-01-03 03:00:00
+4,charlie,charliechaplin@mail.com,$2y$10$xfbubnBsPFffnc1GJ1cRXejhRdPxwfaPGzfv0Qz49mYhoPEFkdDzW,5,"Hollywood","Actor",2021-01-24 12:49:05
+5,sabrina,teenagewitch@mail.com,$2y$10$eTmTTSMFjr5lHo35BWquEO9gjOZ6EiLP64urEcbhdvwymFBoJ/1Ba,6,"Blåkulla","Witch",2021-01-24 12:49:47
+6,admin,admin@mail.com,$2y$10$GkUFoaaym/nSO6jN16/CiOGAVks5LYy7I5Ltb/w90JfaLQUhArLVO,99,"Uppsala","Developer",2021-01-24 12:50:20

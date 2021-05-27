@@ -1,6 +1,36 @@
 id,user,question,text,score,created
-1,user3,1,entry1,10,2021-03-01 01:00:00
-2,user1,2,entry2,1,2021-03-01 02:00:00
-3,user2,1,entry3,0,2021-03-01 03:00:00
-4,user1,4,entry4,-1,2021-03-01 04:00:00
-5,user3,1,entry5,-10,2021-03-01 05:00:00
+1,user3,1,"Rabarber trivs i näringsrik och fuktig jord, med full sol på sig. De är lätta att flytta men har ett mycket större rotsystem än man kan tro. Börja med att gräva ca 70-100 cm i diameter runtom plantan, hittar du inga rötter går du närmare plantan. Ofta är rötterna kraftiga och påminner om ett rejält knippe morötter som ligger huller om buller i marken. På den nya växtplatsen kan du jordförbättra med naturgödsel och vattna rikligt hela sommaren. Låt plantan återhämta sig det första året efter flytt – alltså låt helst bli att skörda eller se i vart fall till att inte skörda för många blad! Plantan behöver all energi den kan få för att rota sig på den nya växtplatsen.",10,2021-03-01 01:00:00
+2,user1,2,"Det låter som att det kan vara angrepp av exempelvis häggspinnmal du råkat ut för. Den kan angripa många olika slags träd och buskar, inte bara häggen. Men kan också vara någon annan mal som spinner in dina träd. Det finns även äppelspinnmal. Googla gärna för att se bilder och jämföra.
+Dessa angrepp är inte helt ovanliga i naturen och uppkommer till stor del slumpvis. Ibland drabbar de också oss trädgårdsägare.
+
+Rådet är att vara vaksam redan före den tid då angreppen brukar börja. Spola av trädet med en hård stråle vatten.
+Kolla gärna runt efter biologiska medel redan under vintern om ni vill testa. Det heter Bacillus thuringiensis och säljs under flera olika namn. Det finns ett par varianter av dessa nyttiga baciller (som alltså är aggressiva mot skadedjur och inte alls giftigt för växter/djur/människor, så det är viktigt att se till att det är rätt sort. De firmor som finns kommer med all säkerhet att hjälpa dig med detta.
+Att vi inte säljer dessa produkter har med lagringen att göra, de är dyra och inköpsvägen till konsument måste bli så kort som möjligt.
+
+En produkt som vi har heter Solabiol insektsspray och är ett naturens eget gift och tar kål på de larver som träffas. Medlet har inte fullgod verkan och ska inte kombineras med biologisk bekämpning.
+
+Så fort spånad börjar synas ska man plocka bort för hand och bränna så mycket man kan. Som så ofta gäller det att vara ute i god tid och jaga. Men dessa kryp, spinnmalarna är fantastiska på det de gör - det får man tyvärr ge dem.
+
+Oftast är det ingen fara för ett etablerat träds överlevnad, men helt klart har dessa angrepp en klar negativ verkan på växterna.",1,2021-03-01 02:00:00
+3,user3,2,"Är du säker på att det är spinn som drabbat ditt träd? De brukar normalt inte angripa fruktträd utan det brukar då handla om spinnmal, liksom i inlägget här ovan. Följ i sådana fall råden här och plocka bort angripna blad så snart som möjligt. Lycka till!",0,2021-03-01 03:00:00
+4,user1,4,"Vid plantering av surjordsväxter är det viktigt att de får stå i en kalkfri jord och då är det lättast att köpa en påse rhododendronjord eller naturell torv att plantera i. En befintlig jord kan tillföras torv, bark, eklöv eller barr för att sänka pH-värdet. Undvik att kalka eller tillsätta gödsel eller jordförbättringsmedel som innehåller kalk, då det höjer pH-värdet.",-1,2021-03-01 04:00:00
+5,user1,3,"Att föröka vildvin är enkelt och kan göras genom att ta sticklingar med eller utan rötter. Om du väljer att ta sticklingar utan rötter är det bäst att göra det i början av sommaren, detta för att sticklingarna ska hinna bilda rötter under säsongen. Ta 20-30 cm långa bitar av årsutväxten, repa av de flesta bladen men spara ett par längst upp, sätt dem i såjord och trä över en plastpåse med hål i. När plantan har rotat sig och börjat växa kan du plantera den ute i rabatten. Var noga med att vattna de nya plantorna ordentligt den första månaden.",-10,2021-03-01 05:00:00
+6,user2,1,"Du kan flytta rabarbern nu även om tidig vår eller sen höst är att föredra. Försök att få med så mycket av rabarbens rötter som möjligt. Lycka till!",-10,2021-03-01 05:00:00
+7,charlie,5,"Hej,
+Visst kan du göra det, flaskorna är inte skadliga. Lycka till!",4,2021-03-01 05:00:00
+8,user2,5,"Om det gäller vanliga krukväxtorkidéer, som t ex brudorkidé, så ska de planteras om i orkidékompost, som egentligen är en barkblandning. Plantorna ska planteras ned så att de flesta rötterna kommer ner i "jorden", men inte bladen. Om inte alla rötter går ner i krukan så är det ingen fara - i naturen så hänger de löst i luften eller växter på en trädstam eller liknande. Lycka till!",3,2021-02-05 21:41:03
+9,sabrina,6,"Det låter som att det kan vara angrepp av exempelvis häggspinnmal du råkat ut för. Den kan angripa många olika slags träd och buskar, inte bara häggen. Men kan också vara någon annan mal som spinner in dina träd. Det finns även äppelspinnmal. Googla gärna för att se bilder och jämföra.
+Dessa angrepp är inte helt ovanliga i naturen och uppkommer till stor del slumpvis. Ibland drabbar de också oss trädgårdsägare.
+
+Rådet är att vara vaksam redan före den tid då angreppen brukar börja. Spola av trädet med en hård stråle vatten.
+Kolla gärna runt efter biologiska medel redan under vintern om ni vill testa. Det heter Bacillus thuringiensis och säljs under flera olika namn. Det finns ett par varianter av dessa nyttiga baciller (som alltså är aggressiva mot skadedjur och inte alls giftigt för växter/djur/människor, så det är viktigt att se till att det är rätt sort. De firmor som finns kommer med all säkerhet att hjälpa dig med detta.
+Att vi inte säljer dessa produkter har med lagringen att göra, de är dyra och inköpsvägen till konsument måste bli så kort som möjligt.",4,2021-03-23 18:30:00
+10,admin,6,"En produkt som vi har heter Solabiol insektsspray och är ett naturens eget gift och tar kål på de larver som träffas. Medlet har inte fullgod verkan och ska inte kombineras med biologisk bekämpning.
+
+Så fort spånad börjar synas ska man plocka bort för hand och bränna så mycket man kan. Som så ofta gäller det att vara ute i god tid och jaga. Men dessa kryp, spinnmalarna är fantastiska på det de gör - det får man tyvärr ge dem.
+
+Oftast är det ingen fara för ett etablerat träds överlevnad, men helt klart har dessa angrepp en klar negativ verkan på växterna.",2,2021-03-23 21:25:00
+11,user1,7,"Tack",0,2021-01-01 11:00:11
+12,user2,7,"Tack så mycket",0,2021-01-02 11:02:34
+13,user3,7,"Tackar!",0,2021-01-02 11:02:55
+14,sabrina,7,"Tack tack",0,2021-01-18 11:03:23

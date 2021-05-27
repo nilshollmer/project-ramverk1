@@ -23,11 +23,10 @@
 /** ==============================================================
  * Header
  */
-/*
-.site-header {
 
-}*/
-
+.outer-wrap-header {
+    box-shadow: 0 12px 11px rgba(0,0,0,0.035), 0 100px 80px rgba(0,0,0,0.07);
+}
 @colorAccentHeader1:  #3B440D;
 @colorAccentHeader2:  #9FB129;
 @fontFamilySiteLogo:  @fontFamilyTimesNewRoman;
@@ -122,6 +121,12 @@
 /** --------------------------------------------------------------
  * Flash area
  */
+
+.inner-wrap-flash {
+    #desinax-vgrid.column(@columns);
+    float: none;
+}
+
 .region-flash {
     #desinax-vgrid.column(@columns);
 }
@@ -158,6 +163,10 @@
     #desinax-vgrid.column(@columns / 4);
 }
 
+.col5 {
+    #desinax-vgrid.column(@columns / 5);
+    text-align: center;
+}
 .column {
     height: 100%;
 }

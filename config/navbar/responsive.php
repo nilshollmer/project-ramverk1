@@ -25,5 +25,10 @@ return [
             "url" => "style",
             "title" => "Välj stylesheet.",
         ],
+        [
+            "text" => "Verktyg",
+            "url" => "verktyg",
+            "title" => "Verktyg och möjligheter för utveckling.",
+        ],
     ],
 ];

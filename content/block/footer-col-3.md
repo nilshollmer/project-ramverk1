@@ -1,3 +1,8 @@
-#### Footer col 3
+#### COMPANY
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+About  
+Press  
+Work Here  
+Legal  
+Privacy Policy  
+Contact Us

@@ -1,0 +1,51 @@
+/** --------------------------------------------------------------
+ * Buttons
+ */
+.button-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 @magicNumber / 2 0 0;
+    height: fit-content;
+    width: fit-content;
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+.btn-small {
+    padding: .1em .4em;
+}
+
+.btn-large {
+    padding: @magicNumber / 2 @magicNumber;
+}
+
+.btn-blue {
+    color: #fff !important;
+    background-color: @btnBlue;
+    &:hover {
+        background-color: darken(@btnBlue, 20%);
+    }
+}
+
+.btn-light-blue {
+    color: #39739d !important;
+    background-color: @tagBackgroundColor;
+    &:hover {
+        background-color: darken(@tagBackgroundColor, 20%);
+    }
+}
+
+.btn-green {
+    color: #fff !important;
+    background-color: @btnGreen;
+    &:hover {
+        background-color: darken(@btnGreen, 20%);
+    }
+}

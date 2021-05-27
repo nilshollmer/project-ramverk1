@@ -2,6 +2,8 @@
 /**
  * Supply the basis for the navbar as an array.
  */
+
+
 return [
     // Use for styling the menu
     "wrapper" => null,
@@ -10,24 +12,34 @@ return [
     // Here comes the menu items
     "items" => [
         [
-            "text" => "Hem",
-            "url" => "",
-            "title" => "Första sidan, börja här.",
+            "text" => "About",
+            "url" => "about",
+            "title" => "About this site",
         ],
         [
-            "text" => "Om",
-            "url" => "om",
-            "title" => "Om denna webbplats.",
+            "text" => "Questions",
+            "url" => "questions",
+            "title" => "Questions",
         ],
         [
-            "text" => "Styleväljare",
-            "url" => "style",
-            "title" => "Välj stylesheet.",
+            "text" => "Tags",
+            "url" => "tags",
+            "title" => "Tags",
         ],
         [
-            "text" => "Verktyg",
-            "url" => "verktyg",
-            "title" => "Verktyg och möjligheter för utveckling.",
+            "text" => "Users",
+            "url" => "users",
+            "title" => "Users",
+        ],
+        [
+            "text" => "Login",
+            "url" => "user/login",
+            "title" => "Login",
+        ],
+        [
+            "text" => "Sign up",
+            "url" => "user/create",
+            "title" => "Sign up",
         ],
     ],
 ];
