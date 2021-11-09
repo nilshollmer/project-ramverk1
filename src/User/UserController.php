@@ -53,21 +53,13 @@ class UserController implements ContainerInjectableInterface
      */
     public function indexActionGet() : object
     {
-        $page = $this->di->get("page");
-
-        $page->add("anax/v2/article/default", [
-            "content" => "An index page",
-        ]);
-
-        return $page->render([
-            "title" => "A index page",
-        ]);
+        $this->di->get("response")->redirect("user/login");
     }
 
 
 
     /**
-     * Description.
+     * Login/Logout page
      *
      * @param datatype $variable Description
      *
@@ -102,7 +94,7 @@ class UserController implements ContainerInjectableInterface
 
 
     /**
-     * Description.
+     * Create user page
      *
      * @param datatype $variable Description
      *
@@ -113,6 +105,12 @@ class UserController implements ContainerInjectableInterface
     public function createAction() : object
     {
         $page = $this->di->get("page");
+        $loggedIn = $this->di->get("session")->get("loggedin", null);
+
+        if ($loggedIn) {
+            $this->di->get("response")->redirect("user/login");
+        }
+        
         $form = new CreateUserForm($this->di);
         $form->check();
 

@@ -18,9 +18,7 @@ class ForumController implements ContainerInjectableInterface
      */
     private $forum;
     /**
-     * The initialize method is optional and will always be called before the
-     * target method/action. This is a convienient method where you could
-     * setup internal properties that are commonly used by several methods.
+     * The initialize method sets up forum object which is used to 
      *
      */
     public function initialize()
@@ -33,48 +31,60 @@ class ForumController implements ContainerInjectableInterface
 
 
     /**
-     * Show all questions
+     * Front page of forum
      *
      */
     public function indexActionGet()
     {
+        if (!isset($this->forum->currentUser)) {
+            $this->di->get("response")->redirect("welcome");
+        }
+
         $nrOfQuestions  = 5;
         $nrOfUsers      = 5;
         $nrOfTags       = 5;
 
         $page           = $this->di->get("page");
-
+        
+        $user           = new \Nihl\User\User();
         $question2tag   = new Question2Tag\Question2Tag();
 
-        $user           = new \Nihl\User\User();
         $user           ->setDb($this->di->get("dbqb"));
         $question2tag   ->setDb($this->di->get("dbqb"));
-
-        if (!isset($this->forum->currentUser)) {
-            $this->di->get("response")->redirect("welcome");
-        }
-
-        $page->add("forum/index/latest-questions", [], "main");
-
-
+        
+        
         // Display the latest questions
         $this->forum->getAllQuestions();
-
+        
+        $page->add("forum/index/latest-questions", [], "main");
         for($i = 0; $i < $nrOfQuestions; $i++) {
-            $currentQuestion = $this->forum->questions[$i];
-            $user           = new \Nihl\User\User();
-            $user           ->setDb($this->di->get("dbqb"));
-            $user->find("username", $currentQuestion->user);
-            $tags = $question2tag->findAllWhere("question_id = ?", $currentQuestion->id);
+            $currentQuestion    = $this->forum->questions[$i];
+            $user               = new \Nihl\User\User();
+            $user               ->setDb($this->di->get("dbqb"));
+            $user               ->find("username", $currentQuestion->user);
+            $questionTags       = $question2tag->findAllWhere("question_id = ?", $currentQuestion->id);
 
             $page->add("forum/questions/view-question-summary", [
                 "question" => $currentQuestion,
                 "user" => $user,
-                "tags" => $tags
+                "tags" => $questionTags
             ], "main");
         }
 
+        $tags           = new Tag\Tag();
+        $questionTags   = new Question2Tag\Question2Tag();
+
+        $tags           ->setDb($this->di->get("dbqb"));
+        $questionTags   ->setDb($this->di->get("dbqb"));
         $page->add("forum/index/most-popular-tags", [], "main");
+
+        foreach($tags->findAll() as $tag) {
+            $questions = $questionTags->findAllWhere("tag_name = ?", $tag->name);
+            $page->add("forum/tags/view-tag-summary", [
+                "tag" => $tag,
+                "questions" => count($questions)
+            ]);
+        }
         // for($i = 0; $i < $nrOfTags; $i++) {
         //     $currentQuestion = $this->forum->questions[$i];
         //     $user->find("username", $currentQuestion->user);
@@ -192,12 +202,11 @@ class ForumController implements ContainerInjectableInterface
         $question->incrementViews();
         $question->save();
         $questionText = $tf->parse($question->text, ["markdown"])->text;
-
+        
         $user->find("username", $question->user);
-
+        
         $comment = $comment->findAllWhere("question = ?", $questionId);
         $tags = $questionTags->findAllWhere("question_id = ?", $questionId);
-
         $page->add("forum/questions/view-question", [
             "question" => $question,
             "questionText" => $questionText,
@@ -499,6 +508,7 @@ class ForumController implements ContainerInjectableInterface
             "title" => "A collection of items",
         ]);
     }
+
     /**
      * Show all questions
      *

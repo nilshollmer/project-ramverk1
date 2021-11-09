@@ -65,7 +65,7 @@ endif;
                 <div class="comment-text">
                     <?= $comment->text?>
                 </div>-
-                <a href="#">
+                <a href=<?= url("users/") . "/". $comment->user ?>>
                     <?= $comment->user?>
                 </a>
                 <span class="comment-date"><?= date("M d G:i", strtotime($comment->created))?></span>

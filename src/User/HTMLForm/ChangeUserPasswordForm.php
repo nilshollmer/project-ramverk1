@@ -9,7 +9,7 @@ use Nihl\User\User;
 /**
  * Implementing Create user
  */
-class UpdateUserForm extends FormModel
+class ChangeUserPasswordForm extends FormModel
 {
     /**
      * Constructor injects with DI container.

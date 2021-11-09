@@ -34,8 +34,9 @@ class Forum implements ContainerInjectableInterface
             $this->currentUser = $user;
         }
     }
+
     /**
-     * get currentUser
+     * Get currentUser
      */
     public function getCurrentUser()
     {
@@ -78,11 +79,12 @@ class Forum implements ContainerInjectableInterface
         $taggedQuestions = [];
 
         foreach($questionsWithTag as $q2t) {
-            $id = $q2t->question_id;
+            $id             = $q2t->question_id;
             $question       = new Question\Question();
             $question       ->setDb($this->di->get("dbqb"));
 
-            $q = $question->findById($id);
+            $q              = $question->findById($id);
+
             array_push($taggedQuestions, $q);
         }
 
@@ -153,11 +155,11 @@ class Forum implements ContainerInjectableInterface
                 $this->sortByValue("score");
                 break;
             case "oldest":
-                ksort($this->questions);
+                sort($this->questions);
                 break;
             case "newest":
             default:
-                krsort($this->questions);
+                rsort($this->questions);
                 break;
         }
     }
